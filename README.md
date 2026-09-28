@@ -6,8 +6,8 @@ polished grid, following the standard `data` / `loading` / `error` pattern.
 
 ## Live Demo
 
-- **Netlify:** _add your deployed link here_
-- **GitHub:** _add your repo link here_
+- **Netlify:** (https://usefetch-demo.netlify.app/)
+- **GitHub:** (https://github.com/Cybogeek/useFetch-demo)
 
 ---
 
@@ -26,12 +26,12 @@ polished grid, following the standard `data` / `loading` / `error` pattern.
 
 ## Tech Stack
 
-| Tool          | Version    | Notes                                   |
-|---------------|-----------|-------------------------------------------|
-| React         | 19.2.x    | Latest stable major release               |
-| Vite          | 8.x       | Build tool / dev server                   |
-| Node.js       | ≥ 20.19   | Also tested on Node 22 LTS and Node 24 LTS |
-| ESLint        | 9.x       | Flat config, `react-hooks` rules enabled  |
+| Tool    | Version | Notes                                      |
+| ------- | ------- | ------------------------------------------ |
+| React   | 19.2.x  | Latest stable major release                |
+| Vite    | 8.x     | Build tool / dev server                    |
+| Node.js | ≥ 20.19 | Also tested on Node 22 LTS and Node 24 LTS |
+| ESLint  | 9.x     | Flat config, `react-hooks` rules enabled   |
 
 > Vite 8 requires Node.js `20.19+` or `22.12+`. If you're on an older
 > Node version, upgrade first (`node -v` to check).
@@ -67,12 +67,12 @@ usefetch-app/
 const { data, loading, error, refetch } = useFetch(url);
 ```
 
-| Hook used     | Why                                                                 |
-|---------------|----------------------------------------------------------------------|
-| `useState`    | Holds `data`, `loading`, and `error`.                                |
+| Hook used     | Why                                                                                                                             |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| `useState`    | Holds `data`, `loading`, and `error`.                                                                                           |
 | `useCallback` | Keeps the fetch function referentially stable so it can be reused as `refetch()` and safely listed as a `useEffect` dependency. |
-| `useEffect`   | Triggers the fetch whenever `url` changes.                           |
-| `useRef`      | Stores an `AbortController` so a stale, in-flight request can be cancelled if the URL changes again or the component unmounts. |
+| `useEffect`   | Triggers the fetch whenever `url` changes.                                                                                      |
+| `useRef`      | Stores an `AbortController` so a stale, in-flight request can be cancelled if the URL changes again or the component unmounts.  |
 
 The hook validates its input (rejects empty/non-string URLs), checks
 `response.ok` explicitly (since `fetch()` doesn't throw on HTTP error
@@ -112,6 +112,9 @@ a public dummy product API. No API key required.
 ## Deploying
 
 ### GitHub
+
+Original repo:- https://github.com/Cybogeek/useFetch-demo
+
 ```bash
 git init
 git add .
@@ -122,14 +125,10 @@ git push -u origin main
 ```
 
 ### Netlify
-1. In Netlify: **Add new site → Import an existing project** and connect
-   your GitHub repo.
-2. Build command: `npm run build`
-3. Publish directory: `dist`
-4. Deploy — Netlify will rebuild automatically on every push to `main`.
 
-(The included `public/_redirects` file ensures client-side routing
-works correctly if you add routes later.)
+The code will be deployed on Netlify
+
+- URL:- https://usefetch-demo.netlify.app/
 
 ---
 
@@ -168,6 +167,16 @@ works correctly if you add routes later.)
 
 ---
 
+## Screenshot
+
+|(1)|----|
+
+### Future Updates
+
+- Converting the simple Javascript files to Typecript format and use the hook in Next Js application.
+
 ## License
 
-This project was created for educational/assignment purposes.
+This project was created for assignment purposes.
+
+#### Code Credits: Sukanto Chatterjee
