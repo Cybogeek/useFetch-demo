@@ -1,0 +1,36 @@
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  min-height: 100vh;
+  background: #f9fafb;
+}
+
+.app-header {
+  text-align: center;
+  padding: 48px 16px 16px;
+  background: linear-gradient(135deg, #eef2ff, #f9fafb);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #111827;
+  letter-spacing: -0.02em;
+}
+
+.app-header p {
+  color: #6b7280;
+  margin-top: 6px;
+  font-size: 15px;
+}
