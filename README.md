@@ -168,15 +168,16 @@ The code will be deployed on Netlify
 ---
 
 ## Screenshot
-
-|(1)|----|
+| SL.| Screens|
+|--|----|
+|(1)|<img alt="use-fetch-home" src="https://github.com/user-attachments/assets/ac2320cc-dee6-4b6f-a694-cbeb755963ce" />|
 
 ### Future Updates
 
-- Converting the simple Javascript files to Typecript format and use the hook in Next Js application.
+- Converting the simple JavaScript files to TypeScript format and using the hook in a NextJs application.
 
 ## License
 
 This project was created for assignment purposes.
 
-#### Code Credits: Sukanto Chatterjee
+#### Code Credits: Sukant C
